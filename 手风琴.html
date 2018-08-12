@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /* ul必须设宽度，否则最后一块有时会跑下去 */
+    #box {
+      width: 1200px;
+      height: 400px;
+      margin: 100px auto;
+    }
+    ul{
+      width: 1300px;
+    }
+    #box li {
+      list-style: none;
+      width: 240px;
+      height: 400px;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+<div id="box">
+  <ul>
+    <!-- <li style="background-image:url(img/fq1.jpg)"></li> -->
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<script src="../1.tab切换/lib/jquery-1.12.4.js"></script>
+<script src="js/jQuery.accordion.js"></script>
+<script>
+  $accordion(
+    // {
+    //    imageData:['fq1.jpg','fq2.jpg','fq3.jpg','fq4.jpg','fq5.jpg'],
+    //    container:'#box li',
+    //    hoverWidth:800,
+    //    otherWidth:100,
+    //    leaveWidth:240,
+    //    overEvent:'mouseover',
+    //    outEvent:'mouseout',
+    // }
+  );
+
+
+</script>
+</body>
+</html>
